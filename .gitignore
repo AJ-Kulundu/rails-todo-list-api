@@ -35,3 +35,6 @@
 # Ignore all env files
 .env
 .env.*
+
+#Ignore development files
+*.rest
