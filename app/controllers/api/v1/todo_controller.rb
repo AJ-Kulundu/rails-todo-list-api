@@ -21,7 +21,7 @@ module Api
             end
             private
             def todo_params
-                params.require(:todo).permit(:todo, :descrption, :done)
+                params.require(:todo).permit(:title, :description, :done)
             end
         end
     end
