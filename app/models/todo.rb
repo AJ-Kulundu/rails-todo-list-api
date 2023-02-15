@@ -1,5 +1,5 @@
 class Todo < ApplicationRecord
-    validates :todo , presence: true
-    validates :descrption , presence: true
-    validates :done , presence: true
+    validates :title , presence: true
+    validates :description , presence: true
+    validates :done , inclusion: { in: [true, false] }
 end
